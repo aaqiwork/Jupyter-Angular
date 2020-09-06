@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+@import url('https://fonts.googleapis.com/css?family=Satisfy');
+
+.navbar-brand{
+    /* font-family: 'Dancing Script', cursive; */
+    font-family: 'Satisfy', cursive;
+    font-size:25px;
+
+}

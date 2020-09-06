@@ -1,0 +1,36 @@
+/* You can add global styles to this file, and also import other style files */
+
+.background{
+    background-color:white;
+    color:black;
+
+}
+.footerbody{
+    font-family:light;
+    text-align:left !important;
+    padding-left:30%;
+}
+h5{
+    font-family:med;
+}
+.fab{
+margin-right:5px;
+margin-left:5px;
+font-size:40px;
+
+
+}
+.fa-facebook{
+    color:rgb(0, 0, 82);
+    
+}
+.fa-whatsapp{
+    color:green;
+    
+}
+.fa-google-plus-g{
+    color:rgb(170, 0, 0);
+}
+.fa-twitter{
+    color:rgb(0, 162, 255);
+}

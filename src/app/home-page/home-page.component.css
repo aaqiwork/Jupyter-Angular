@@ -1,0 +1,113 @@
+
+/* @import "http://nyplintranet-training.appspot.com/css/themes/nypl/main.css"; */
+
+  .carousel-control-prev1{
+    background-image: linear-gradient(to right,rgba(0, 0, 0, 0.644) 0,rgba(0, 0, 0, 0) 100%);
+    }
+    .carousel-control-next1{
+      background-image: linear-gradient(to right,rgba(0, 0, 0, 0.644) 0,rgba(0, 0, 0, 0) 100%);
+      }
+      .background{
+     background-color:rgb(255, 255, 255);
+      }
+    .center {  
+        position: absolute; 
+        top:120px;left:100px;      
+      }
+    .example-card{
+      max-width: 400px;
+    }
+    .collection{
+        box-shadow: 0px 0px 10px black;
+        transition:0.5s;
+    }
+    
+    .example-header-image {
+        background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');/*card title image*/
+      background-size: cover;
+    }
+
+      .banner-padding{
+          
+      }
+.section1, .section2 , .section3{
+    background-color:white;
+}
+h5,h6{
+    font-family:light;
+}
+h3{
+    font-family:reg;
+}
+.img-fluid{
+    padding-top:5px;
+    height: 200px;
+    padding-left: 29%;
+}
+.img-fluid1{
+    padding-top:5px;
+    height: 200px;
+
+}
+.carousel-control-prev-icon{
+    background-color:black;
+}
+.carousel-control-next-icon{
+    background-color:black;
+}
+.card-title{
+    padding-left:5px;
+}
+.slide{
+  transition:3s;
+}
+.card-block{
+    /* background-image: linear-gradient(-90deg, rgb(119, 0, 255), rgb(80, 51, 243));
+    color:white; */
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+}
+.price{
+    color:rgb(71, 0, 0);
+}
+.card{
+    border-radius:10px;
+    text-align:left;
+    text-emphasis-position: center;
+    border:none;
+}
+a{
+    color:rgb(43, 0, 71);
+}
+
+
+/* equal card height */
+.row-equal > div[class*='col-'] {
+    display: flex;
+    flex: 1 0 auto;
+}
+
+.row-equal .card {
+   width: 100%;
+}
+
+/* ensure equal card height inside carousel */
+.carousel-inner>.row-equal.active, 
+.carousel-inner>.row-equal.next, 
+.carousel-inner>.row-equal.prev {
+    display: flex;
+}
+
+/* prevent flicker during transition */
+.carousel-inner>.row-equal.active.left, 
+.carousel-inner>.row-equal.active.right {
+    opacity: 0.5;
+    display: flex;
+}
+
+
+/* control image height */
+.card-img-top-250 {
+    max-height: 250px;
+    overflow:hidden;
+}

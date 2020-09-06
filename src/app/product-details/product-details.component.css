@@ -1,0 +1,67 @@
+.Details li{
+  list-style-type: none;
+}
+
+
+.List{
+  margin-left: 30px;
+}
+.checked {
+  color: orange;
+}
+.spec{
+  margin-top: 15px;
+}
+.img-1{
+  width:180px;
+  height:250px;
+  border: solid 1px;
+  margin-left: 60px;
+}
+.buttonCol{
+  width: 160px;
+  margin-left: -40px;
+  height:50px;
+  color:#ffffff;
+  font-size: 20px;
+  background: orange;
+}
+.buttonCol2{
+  width: 160px;
+  height:50px;
+  /* margin-left: 40px;
+  margin-top: 40px; */
+  color:#ffffff;
+  font-size: 20px;
+  background: orange;
+}
+.largeImg{
+  margin-top: 20px;
+  
+}
+.imageSec{
+  position:sticky;top:0;
+}
+.selection-2{
+  font-size: 15px;
+  margin-top: 10px;
+  width:250px;
+  height:40px;
+}
+.cancel{
+  text-decoration: line-through;
+}
+.title{
+  margin-top: 20px;
+  color: blue ;
+  font-size: 25px
+}
+.List{
+  margin-left: 30px;
+}
+.checked {
+  color: orange;
+}
+.spec{
+  margin-top: 15px;
+}

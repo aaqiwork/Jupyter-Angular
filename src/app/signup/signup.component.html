@@ -1,0 +1,71 @@
+<div class="background-image">
+    <div class="modal-dialog text-center">
+        <div class="col-sm-9 main-section">
+            <div class="modal-content">
+                <div class="col-12 user-logo">
+
+                    Jupiter
+
+                </div>
+                <form class="col-12" style="margin-bottom:40px;"  #f="ngForm" [formGroup]="user">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="name" name="name" formControlName="name" placeholder="Enter Name" ngModel required>
+                    </div>
+                    <div class="error center" style="color:red;margin-top: -15px;margin-bottom:10px" *ngIf="user.get('name').hasError('required') && user.get('name').touched">
+                        Name is required
+                    </div>
+                    <div class="error center " style="color: red;margin-top: -15px;margin-bottom:10px" *ngIf="user.get('name').hasError('minlength') && user.get('name').touched">
+                        Minimum 4 character
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" class="form-control" name="email" formControlName="email" placeholder="Enter Email" id="email" ngModel
+                            required>
+                    </div>
+
+                    <div class="error center" style="color:red;margin-top: -15px;margin-bottom:10px" *ngIf="user.get('email').hasError('required') && user.get('email').touched">
+                        Email is required
+                    </div>
+                    <div class="error center" style="color: red;margin-top: -15px;margin-bottom:10px" *ngIf="!user.get('email').hasError('required') &&  user.get('email').hasError('email') && user.get('email').touched">
+                        please enter valid email
+                    </div>
+                    <div class="form-group">
+                        <input type="number" class="form-control" name="mobileNumber" formControlName="mobileNumber" placeholder="Enter Mobile Number"
+                            id="number" ngModel required>
+                    </div>
+                   
+                    <div class="form-group">
+                        <input type="password" class="form-control" name="password" formControlName="password" placeholder="Enter Password" id="password"
+                            ngModel required>
+                    </div>
+                    <div class="error center" style="color:red;margin-bottom:10px" *ngIf="user.get('password').hasError('required') && user.get('password').touched">
+                        password is required
+                    </div>
+                    <div class="error center" style="color: red;margin-bottom:10px" *ngIf="user.get('password').hasError('minlength') && user.get('password').touched">
+                        Minimum 6 character
+                    </div>
+                    <div class="error center" style="color: red;margin-bottom:10px" *ngIf="user.get('password').hasError('maxlength') && user.get('password').touched">
+                        maximum 10 character
+                    </div>
+
+                    <div class="form-group">
+                        <input type="password" class="form-control" name="re_enter_password" placeholder="Re-enter Password" id="repassword" formControlName=" re_enter_password"
+                            ngModel required>
+                    </div>
+                    <div class="error center" style="color: red;margin-top: -10px;margin-bottom:10px" *ngIf="user.get('re_enter_password').hasError('equalTo') && user.get('password').touched">
+                        Password Mismatch
+                    </div>
+                    <button class="form-control " type="submit" class="btn btn-md signup" style="width:100%;" [disabled]="!f.valid">
+                        Sign Up
+                    </button>
+
+                </form>
+                <div class="col-12 forgot">
+                    <a class="forgot" routerLink="/login">Already have an Account?</a>
+                </div>
+
+            </div>
+            <!-- modal content end-->
+        </div>
+    </div>
+</div>
